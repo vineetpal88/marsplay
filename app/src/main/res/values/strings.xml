@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MarsPlay</string>
+    <string name="file_provider_authority" translatable="false">com.vineet.marsplay.fileprovider</string>
+</resources>
