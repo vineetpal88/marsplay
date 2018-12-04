@@ -28,7 +28,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,12 +37,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:configChanges="keyboardHidden|orientation"/>
 
         <activity
-            android:name="com.vineet.marsplay.ViewImageActivity"/>
+            android:name="com.vineet.marsplay.ViewImageActivity"
+            android:configChanges="keyboardHidden|orientation"/>
         <activity
-            android:name="com.vineet.marsplay.FullScreenImageActivity"/>
+            android:name="com.vineet.marsplay.FullScreenImageActivity"
+            android:configChanges="keyboardHidden|orientation"/>
 
         <service
             android:name="com.vineet.marsplay.service.MyUploadIntentService"
